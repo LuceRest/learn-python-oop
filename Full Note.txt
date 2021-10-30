@@ -1,0 +1,138 @@
+- Class/template di python :
+	class <nama class>:
+        	pass
+
+- Object/instance (instansiate) di python :
+	<nama object> = <nama class>()
+
+- <nama object>.<attribute> = <isi attribute>	~> Berfungsi untuk memberi attribute pada suatu object.
+
+- print(<nama object>.__dict__)			~> Berfungsi untuk menampilkan semua attribute dan isinya dari suatu object.
+
+
+
+- def __init__(self):	~> Function yg pertama kali akan dijalankan ketika object dari suatu class dibuat.
+    - self	-> Object dari suatu class yg bersangkutan.
+
+
+
+- Instance variable	-> Variabel yg hanya dimiliki oleh suatu object tertentu.
+- Class variable	-> Variabel yg dimiliki oleh suatu class.
+
+
+
+- Method pada suatu class :
+	def <nama method>(self, <argument>):
+            <action>
+
+
+
+- Private variable	~> Berfungsi untuk encapsulasi suatu variabel.
+
+- Private variable di python :
+	<nama object>.__<nama private variable> = <isi private variable>
+
+- Protected variable di python :
+	<nama object>._<nama protected variable> = <isi protected variable>
+
+- Protected variable bisa diakses & diubah, biasanya dipakai di dalam class saja.
+
+
+
+- Aturan dari encapsulasi :
+	- Buat semua variabel menjadi private variable.
+	- Gunakan getter untuk mengambil variabelnya dan setter untuk mensetting variabelnya.
+
+
+
+- Method dengan argument self hanya berlaku untuk object.
+- Method tanpa argument self hanya berlaku untuk class.
+- Method static dapat berlaku untuk object dan class (nempel ke object & class) tanpa mengambil argument.
+- Method class dapat berlaku untuk object dan class (nempel ke class) dengan mengambil argument.
+
+- Method static (decorator) di python :
+    @staticmethod
+    def <nama function/method>():
+        <action>
+
+- Method static class (decorator) di python :
+    @classmethod
+    def <nama function/method>(<argument>):
+        <action>
+
+
+
+- @property	~> Berfungsi untuk mengubah suatu method menjadi seperti variabel.
+
+- Penggunaan @property di python :
+    @property
+    def <nama method yg ingin dianggap seperti variabel>(<argument>):
+        <action>
+
+- Getter di python :
+    @<nama method>.getter
+    def <nama method>(self):
+        return self.<private variable>
+    <nama object>.<nama method>
+
+- Setter di python :
+    @<nama method>.setter
+    def <nama method>(self, <argument>):
+        <action>
+    <nama object>.<nama method> = <isi private variable yg baru>
+
+- Deleter di python :
+    @<nama method>.deleter
+    def <nama method>(self):
+        self.<private variable yg ingin didelete> = None
+    del <nama object>.<nama method>
+
+
+
+- Inheritance	-> Mewariskan method-method dari superclass ke subclass.
+- Inheritance di python
+    class <nama subclass>(<nama superclass>):
+        <action>
+
+
+
+- super()	-> Superclass.
+- super().<method dari superclass>()
+
+
+
+- Override	~> Berfungsi untuk menimpa/mengganti method yg ada di superclass dengan cara memberi nama dan argument yg sama di subclass.
+
+
+
+- Multiple inheritance	-> Subclass dapat mewarisi method-method dari dua atau lebih superclass.
+
+- Mutiple inheritance di python :
+    class <nama subclass>(<nama superclass 1>, <nama superclass 2>):
+        <action>
+
+
+
+- Method resolution order	-> Urutan method yg akan dijalankan apabila nama methodnya sama.
+- class subclass(<superclass 1>, superclass 2>)	=> Method resolutionnya yaitu subclass, superclass 1, superclass 2.
+
+
+
+- class <subclass terkecil>(<subclass 1>, subclass 2>)	=> Method resolutionnya yaitu subclass terkecil, subclass 1, subclass 2, superclass.
+
+
+
+- def __init__(self)        	~> Berfungsi untuk mengeksekusi method langsung saat object dibuat.
+- def __repr__(self)		~> Berfungsi untuk mengeksekusi method apabila object diprint, biasanya dipakai saat debuging.
+- def __str__(self)		~> Berfungsi untuk mengeksekusi method apabila object diprint, biasanya dipakai saat program sudah jadi.
+- def __add__(self, objek)	~> Berfungsi untuk menjumlahkan suatu variable dari kedua object. 
+- def __dict__(self)		~> Berfungsi untuk mengoverride method __dict__.
+
+
+
+- Class abctract	~> Berfungsi untuk memaksa suatu class untuk menggunakan method-method dari class abstract tersebut.
+- Class abstract di python :
+	class <nama class abstract>(ABC):
+		@abstractmethod
+		def <nama method abstract>():
+			<action>

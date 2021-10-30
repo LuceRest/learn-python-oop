@@ -1,0 +1,1 @@
+- Override	~> Berfungsi untuk menimpa/mengganti method yg ada di superclass dengan cara memberi nama dan argument yg sama di subclass.

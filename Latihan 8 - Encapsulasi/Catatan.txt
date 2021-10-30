@@ -1,0 +1,3 @@
+- Aturan dari encapsulasi :
+	- Buat semua variabel menjadi private variable.
+	- Gunakan getter untuk mengambil variabelnya dan setter untuk mensetting variabelnya.

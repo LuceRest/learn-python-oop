@@ -1,0 +1,14 @@
+- Method dengan argument self hanya berlaku untuk object.
+- Method tanpa argument self hanya berlaku untuk class.
+- Method static dapat berlaku untuk object dan class (nempel ke object & class) tanpa mengambil argument.
+- Method class dapat berlaku untuk object dan class (nempel ke class) dengan mengambil argument.
+
+- Method static (decorator) di python :
+    @staticmethod
+    def <nama function/method>():
+        <action>
+
+- Method static class (decorator) di python :
+    @classmethod
+    def <nama function/method>(<argument>):
+        <action>

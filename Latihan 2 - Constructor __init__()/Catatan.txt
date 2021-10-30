@@ -1,0 +1,2 @@
+- def __init__(self):	~> Function yg pertama kali akan dijalankan ketika object dari suatu class dibuat.
+    - self	-> Object dari suatu class yg bersangkutan.

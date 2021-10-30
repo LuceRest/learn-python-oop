@@ -1,0 +1,10 @@
+- Class/template di python :
+	class <nama class>:
+        	pass
+
+- Object/instance (instansiate) di python :
+	<nama object> = <nama class>()
+
+- <nama object>.<attribute> = <isi attribute>	~> Berfungsi untuk memberi attribute pada suatu object.
+
+- print(<nama object>.__dict__)			~> Berfungsi untuk menampilkan semua attribute dan isinya dari suatu object.

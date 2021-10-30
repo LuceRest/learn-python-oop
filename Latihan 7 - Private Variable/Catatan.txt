@@ -1,0 +1,10 @@
+- Private variable	~> Berfungsi untuk encapsulasi suatu variabel.
+
+- Private variable di python :
+	<nama object>.__<nama private variable> = <isi private variable>
+
+- Protected variable di python :
+	<nama object>._<nama protected variable> = <isi protected variable>
+
+- Protected variable bisa diakses & diubah, biasanya dipakai di dalam class saja.
+

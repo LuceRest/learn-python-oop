@@ -1,0 +1,24 @@
+- @property	~> Berfungsi untuk mengubah suatu method menjadi seperti variabel.
+
+- Penggunaan @property di python :
+    @property
+    def <nama method yg ingin dianggap seperti variabel>(<argument>):
+        <action>
+
+- Getter di python :
+    @<nama method>.getter
+    def <nama method>(self):
+        return self.<private variable>
+    <nama object>.<nama method>
+
+- Setter di python :
+    @<nama method>.setter
+    def <nama method>(self, <argument>):
+        <action>
+    <nama object>.<nama method> = <isi private variable yg baru>
+
+- Deleter di python :
+    @<nama method>.deleter
+    def <nama method>(self):
+        self.<private variable yg ingin didelete> = None
+    del <nama object>.<nama method>

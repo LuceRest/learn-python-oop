@@ -1,0 +1,5 @@
+- def __init__(self)        	~> Berfungsi untuk mengeksekusi method langsung saat object dibuat.
+- def __repr__(self)		~> Berfungsi untuk mengeksekusi method apabila object diprint, biasanya dipakai saat debuging.
+- def __str__(self)		~> Berfungsi untuk mengeksekusi method apabila object diprint, biasanya dipakai saat program sudah jadi.
+- def __add__(self, objek)	~> Berfungsi untuk menjumlahkan suatu variable dari kedua object. 
+- def __dict__(self)		~> Berfungsi untuk mengoverride method __dict__.

@@ -1,0 +1,5 @@
+- Multiple inheritance	-> Subclass dapat mewarisi method-method dari dua atau lebih superclass.
+
+- Mutiple inheritance di python :
+    class <nama subclass>(<nama superclass 1>, <nama superclass 2>):
+        <action>

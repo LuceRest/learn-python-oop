@@ -1,0 +1,3 @@
+- Method pada suatu class :
+	def <nama method>(self, <argument>):
+            <action>

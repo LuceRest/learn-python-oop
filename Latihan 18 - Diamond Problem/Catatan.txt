@@ -1,0 +1,1 @@
+- class <subclass terkecil>(<subclass 1>, subclass 2>)	=> Method resolutionnya yaitu subclass terkecil, subclass 1, subclass 2, superclass.

@@ -1,0 +1,2 @@
+- Instance variable	-> Variabel yg hanya dimiliki oleh suatu object tertentu.
+- Class variable	-> Variabel yg dimiliki oleh suatu class.

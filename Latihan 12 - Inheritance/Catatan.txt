@@ -1,0 +1,4 @@
+- Inheritance	-> Mewariskan method-method dari superclass ke subclass.
+- Inheritance di python
+    class <nama subclass>(<nama superclass>):
+        <action>

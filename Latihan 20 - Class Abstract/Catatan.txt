@@ -1,0 +1,6 @@
+- Class abctract	~> Berfungsi untuk memaksa suatu class untuk menggunakan method-method dari class abstract tersebut.
+- Class abstract di python :
+	class <nama class abstract>(ABC):
+		@abstractmethod
+		def <nama method abstract>():
+			<action>
